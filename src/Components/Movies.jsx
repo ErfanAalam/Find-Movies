@@ -39,6 +39,9 @@ const Movies = ({ query }) => {
     <>
       <div className="wrapper">
         {
+          Data.length == 0 ?
+          <h1>No movie found</h1>
+          :
           Data.map((result) => {
             return (
                 <div className="box" key={result.id}>

@@ -15,7 +15,11 @@ function App() {
     <input type="text" name="input" id="" placeholder="Enter movie name" onChange={inputval} />
     <button >submit</button>
    </div>
-   <Movies query = {inputVal} />
+   {
+    inputVal == "" ?
+    <h1>Search your favorite movie</h1> :
+    <Movies query = {inputVal} />
+   }
     </>
   )
 }
